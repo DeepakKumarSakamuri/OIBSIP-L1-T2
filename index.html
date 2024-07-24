@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sakamuri Deepak Kumar's Portfolio</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        } 
+ 
+        header { 
+            background-color: #333; 
+            color: white; 
+            padding: 1em 0; 
+        } 
+ 
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            justify-content: center; 
+            padding: 0; 
+        } 
+ 
+        nav ul li { 
+            margin: 0 15px; 
+        } 
+ 
+        nav ul li a { 
+            color: white; 
+            text-decoration: none; 
+        } 
+ 
+        main { 
+            flex: 1; 
+        } 
+ 
+        section { 
+            padding: 2em 0; 
+            text-align: center; 
+        } 
+ 
+        #about .about-content { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 2em 0; 
+        } 
+ 
+        #about img { 
+            border-radius: 50%; 
+            width: 200px; 
+            height: 200px; 
+            margin-right: 2em; 
+        } 
+ 
+        #about .about-text { 
+            max-width: 600px; 
+        } 
+ 
+        .services-container, .skills-container { 
+            display: flex; 
+            justify-content: space-around; 
+        } 
+ 
+        .service, .skill { 
+            background: #f4f4f4; 
+            padding: 2em; 
+            width: 30%; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        } 
+ 
+        .service h2, .skill h2 { 
+            margin-top: 0; 
+        } 
+ 
+        #contact form { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        } 
+ 
+        #contact input, #contact textarea { 
+            width: 80%; 
+            margin: 10px 0; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+        } 
+ 
+        #contact button { 
+            padding: 10px 20px; 
+            border: none; 
+            background: #333; 
+            color: white; 
+            cursor: pointer; 
+        } 
+ 
+        footer { 
+            background-color: #333; 
+            color: white; 
+            text-align: center; 
+            padding: 1em 0; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <ul> 
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#about">About Me</a></li> 
+                <li><a href="#services">Services</a></li> 
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#contact">Contact Us</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        <section id="about"> 
+            <h1>About Me</h1> 
+            <div class="about-content"> 
+                <img src="d.jpg" alt="Sakamuri Deepak Kumar"> 
+                <div class="about-text"> 
+                    <h2>Sakamuri Deepak Kumar</h2> 
+                    <p>I am an Engineering Student. Currently, I am pursuing my B.Tech in Computer Science from KLUNIVERSITY with an aggregate of 9.0 CGPA. I am from Guntur. I completed my school education from Sri Chaitanya. I am looking for a job in Web Development and Full Stack Development. Currently, I am doing a remote internship in Web Development and Designing. I have done certification in Python Programming (IITK), Web Development, C basics, etc..</p> 
+                </div> 
+            </div> 
+        </section> 
+ 
+        <section id="services"> 
+            <h1>Services</h1> 
+            <div class="services-container"> 
+                <div class="service"> 
+                    <h2>Website Design</h2> 
+                    <p>Web development involves creating and maintaining websites. It encompassesseveral disciplines, including front-end development, back-end development, and full-stack development.</p> 
+                </div> 
+                <div class="service"> 
+                    <h2>UX/UI Design</h2> 
+                    <p>UI (User Interface) and UX (User Experience) design focus on the user's interaction with a product, ensuring it is both aesthetically pleasing and functional.</p> 
+                </div> 
+                <div class="service"> 
+                    <h2>Digital Marketing</h2> 
+                    <p>Digital marketing involves promoting products or services through digital channels. It encompasses a variety of strategies and techniques to reach and engage customers.</p> 
+                </div> 
+            </div> 
+        </section> 
+ 
+        <section id="skills"> 
+            <h1>Skills</h1> 
+            <div class="skills-container"> 
+                <div class="skill"> 
+                    <h2>HTML & CSS</h2> 
+                    <p>HTML is the standard markup language used to create web pages. It describes the structure of a webpage using a series of elements and tags.CSS is a style sheet language used for describing the presentation of a document written in HTML. It controls the layout, colors, fonts, and overall appearance of web pages.</p> 
+                </div> 
+                <div class="skill"> 
+                    <h2>JavaScript</h2> 
+                    <p>JavaScript is a versatile scripting language primarily used for enhancing the interactivity and functionality of websites. It can be run in the browser and on the server-side using Node.js.</p> 
+                </div> 
+                <div class="skill"> 
+                    <h2>Python</h2> 
+                    <p>Python is a high-level, interpreted programming language known for its readability and versatility. It is used in web development, data analysis, artificial intelligence, scientific computing, and more.</p> 
+                </div> 
+            </div> 
+        </section> 
+ 
+        <section id="contact"> 
+            <h1>Contact</h1> 
+            <form> 
+                <input type="text" placeholder="Enter Your Name" required> 
+                <input type="email" placeholder="Enter Your Email" required> 
+                <textarea placeholder="Enter Your Message" required></textarea> 
+                <button type="submit">Send</button> 
+            </form> 
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <p>&copy; 2024 Sakamuri Deepak Kumar. All Rights Reserved.</p> 
+    </footer> 
+</body> 
+</html>
